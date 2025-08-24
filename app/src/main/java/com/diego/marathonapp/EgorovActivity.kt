@@ -23,7 +23,6 @@ class EgorovActivity : AppCompatActivity() {
         }
 
         findViewById<ImageView>(R.id.btn_back).setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }

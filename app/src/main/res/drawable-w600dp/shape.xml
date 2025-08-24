@@ -9,26 +9,26 @@
         android:pathData="M0,0 L100,0 L100,100 L0,100 Z"
         android:fillColor="@color/bg"/>
 
-        <!-- Основной фон - растягивается на весь экран -->
-        <path
-            android:pathData="M0,90 L100,90 L100,100 L0,100 Z"
-            android:fillColor="#3E3F50"/>
+    <!-- Основной фон - растягивается на весь экран -->
+    <path
+        android:pathData="M0,85 L100,85 L100,100 L0,100 Z"
+        android:fillColor="#3E3F50"/>
 
-        <!-- Большие оранжевые треугольники по бокам -->
-        <path
-            android:pathData="M0,100 L0,80 L30,100 Z"
-            android:fillColor="#EE8A47"/>
+    <!-- Большие оранжевые треугольники по бокам -->
+    <path
+        android:pathData="M0,100 L0,80 L30,100 Z"
+        android:fillColor="#EE8A47"/>
 
-        <path
-            android:pathData="M70,100 L100,80 L100,100 Z"
-            android:fillColor="#EE8A47"/>
+    <path
+        android:pathData="M70,100 L100,80 L100,100 Z"
+        android:fillColor="#EE8A47"/>
 
-        <!-- Маленькие темные треугольники поверх оранжевых -->
-        <path
-            android:pathData="M0,100 L0,90 L20,100 Z"
-            android:fillColor="#3E3F50"/>
+    <!-- Маленькие темные треугольники поверх оранжевых -->
+    <path
+        android:pathData="M0,100 L0,90 L20,100 Z"
+        android:fillColor="#3E3F50"/>
 
-        <path
-            android:pathData="M80,100 L100,90 L100,100 Z"
-            android:fillColor="#3E3F50"/>
-    </vector>
+    <path
+        android:pathData="M80,100 L100,90 L100,100 Z"
+        android:fillColor="#3E3F50"/>
+</vector>

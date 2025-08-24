@@ -52,7 +52,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Dmitriy Egorov"
@@ -66,7 +66,6 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_marginTop="2dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Andrroid developer"
@@ -94,17 +93,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:text="8(977)940-90-56"
+        android:drawableEnd="@drawable/ic_phone"
+        android:drawablePadding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="@+id/email" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/number"
-        app:layout_constraintStart_toEndOf="@+id/number"
-        app:layout_constraintTop_toTopOf="@+id/number"
-        app:srcCompat="@drawable/ic_phone" />
 
     <TextView
         android:id="@+id/email"
@@ -113,17 +105,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:text="egoroof1@yandex.ru"
+        android:drawableEnd="@drawable/ic_email"
+        android:drawablePadding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/location"
         app:layout_constraintEnd_toEndOf="@+id/location" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:src="@drawable/ic_email"
-        app:layout_constraintBottom_toBottomOf="@+id/email"
-        app:layout_constraintStart_toEndOf="@+id/email"
-        app:layout_constraintTop_toTopOf="@+id/email" />
 
     <TextView
         android:id="@+id/location"
@@ -132,19 +117,20 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="50dp"
-        android:gravity="end"
-        android:lines="2"
-        android:text="Russia, Moscow Oblast, \nZheleznodorozhny"
+        android:text="Russia, Moscow Oblast,"
+        android:drawableEnd="@drawable/ic_location"
+        android:drawablePadding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
+    <TextView
+        android:id="@+id/location2"
+        style="@style/info_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:src="@drawable/ic_location"
-        app:layout_constraintStart_toEndOf="@+id/location"
-        app:layout_constraintTop_toTopOf="@+id/location" />
+        android:text="Zheleznodorozhny"
+        app:layout_constraintStart_toStartOf="@+id/location"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
