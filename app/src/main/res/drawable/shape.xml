@@ -5,6 +5,10 @@
     android:viewportWidth="100"
     android:viewportHeight="100">
 
+    <path
+        android:pathData="M0,0 L100,0 L100,100 L0,100 Z"
+        android:fillColor="@color/bg"/>
+
     <!-- Основной фон - растягивается на весь экран -->
     <path
         android:pathData="M0,95 L100,95 L100,100 L0,100 Z"

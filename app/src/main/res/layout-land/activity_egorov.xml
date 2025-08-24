@@ -22,8 +22,8 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="84dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_________"
@@ -52,15 +52,17 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Dmitriy Egorov"
+        android:textAllCaps="true"
         android:textColor="@color/title"
         android:textSize="24sp"
-        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/textView2"
