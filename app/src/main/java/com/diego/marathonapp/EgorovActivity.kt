@@ -2,13 +2,16 @@ package com.diego.marathonapp
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.net.toUri
 
 class EgorovActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -21,15 +24,44 @@ class EgorovActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        findViewById<ImageView>(R.id.btn_back).setOnClickListener {
-            finish()
-        }
+        setClick()
     }
 
+    fun setClick() {
+        findViewById<ImageView>(R.id.btn_back).setOnClickListener { finish() }
+        findViewById<TextView>(R.id.number).setOnClickListener { intentPhone() }
+        findViewById<TextView>(R.id.email).setOnClickListener { intentEmail() }
+        findViewById<TextView>(R.id.location).setOnClickListener { intentGeo() }
+    }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("MainClose", "MainClose")
+    private fun intentPhone() {
+        val number = R.string.number_dev
+        val intentNumber = Intent(Intent.ACTION_DIAL).apply {
+            data = "tel:$number".toUri()
+        }
+        startActivity(intentNumber)
+    }
+
+    private fun intentEmail() {
+        val email = R.string.mail_dev
+        val sub = R.string.subject_for_email
+        val mes = R.string.message_for_email
+        val intentMail = Intent(Intent.ACTION_SENDTO).apply {
+            data = "mailto:".toUri()
+            putExtra(Intent.EXTRA_EMAIL, arrayOf(email))
+            putExtra(Intent.EXTRA_SUBJECT, sub)
+            putExtra(Intent.EXTRA_TEXT, mes)
+        }
+        startActivity(intentMail)
+    }
+
+    private fun intentGeo() {
+        val latitude : Double = getString(R.string.latitude_diego).toDouble()
+        val longitude : Double = getString(R.string.longitude_diego).toDouble()
+        val uri = "geo:$latitude, $longitude".toUri()
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        startActivity(intent)
+
+        Log.d("EA", "$latitude, $longitude")
     }
 }
