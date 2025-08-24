@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">marathon app</string>
+    <string name="number_dev">+79779409056</string>
+    <string name="mail_dev">egoroof1@yandex.ru</string>
+    <string name="subject_for_email">Привет, я хочу заказать приложение</string>
+    <string name="message_for_email">Моё идеальное приложение - это...</string>
+    <string name="latitude_diego">55.749888</string>
+    <string name="longitude_diego">38.014796</string>
 </resources>
