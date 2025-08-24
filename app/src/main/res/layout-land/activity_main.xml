@@ -36,7 +36,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_egorov"
             android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:contentDescription="Egorov"
             android:text="Egorov D"
             app:cornerRadius="10dp"
