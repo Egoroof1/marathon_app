@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarathonApp">
         <activity
+            android:name=".LischukActivity"
+            android:exported="false" />
+        <activity
             android:name=".EgorovActivity"
             android:exported="false" />
         <activity

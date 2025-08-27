@@ -40,7 +40,18 @@
             android:contentDescription="Egorov"
             android:text="Egorov D"
             app:cornerRadius="10dp"
-            tools:ignore="HardcodedText,MissingConstraints" />
+            tools:ignore="HardcodedText,MissingConstraints"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_lischuk"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:contentDescription="Lischuk"
+            android:text="Lischuk M"
+            app:cornerRadius="10dp"
+            tools:ignore="HardcodedText,MissingConstraints"
+            />
 
     </LinearLayout>
 

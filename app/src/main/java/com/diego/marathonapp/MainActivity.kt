@@ -23,6 +23,14 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<MaterialButton>(R.id.btn_egorov).setOnClickListener {
             startActivity(Intent(this, EgorovActivity::class.java))
+
+
+
         }
+
+        findViewById<MaterialButton>(R.id.btn_lischuk).setOnClickListener {
+            startActivity(Intent(this, LischukActivity::class.java))
+        }
+
     }
 }
