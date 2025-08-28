@@ -3,11 +3,14 @@ package com.diego.marathonapp
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.button.MaterialButton
+import kotlin.random.Random
+import kotlin.random.nextInt
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -23,13 +26,19 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<MaterialButton>(R.id.btn_egorov).setOnClickListener {
             startActivity(Intent(this, EgorovActivity::class.java))
-
-
-
         }
 
         findViewById<MaterialButton>(R.id.btn_lischuk).setOnClickListener {
             startActivity(Intent(this, LischukActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btn_random).setOnClickListener {
+            val random = Random.nextInt(1, 3)
+
+            when(random){
+                1 -> { startActivity(Intent(this, EgorovActivity::class.java)) }
+                2 -> { startActivity(Intent(this, LischukActivity::class.java)) }
+            }
         }
 
     }

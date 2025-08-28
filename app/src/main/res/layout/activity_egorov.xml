@@ -115,11 +115,10 @@
         style="@style/info_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
         android:layout_marginBottom="50dp"
-        android:text="Russia, Moscow Oblast,"
         android:drawableEnd="@drawable/ic_location"
         android:drawablePadding="10dp"
+        android:text="Russia, Moscow Oblast,"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
